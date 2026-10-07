@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>暗殺教室－木棉花國際 | 正版動漫周邊</title>
+    <!-- 引入 Google Fonts 圓體與黑體，營造動漫官方質感 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- 載入 Tailwind CSS 簡化響應式排版與元件設計 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        koroYellow: '#FFD700', // 殺老師經典黃色
+                        koroYellowDark: '#E6C200',
+                        koroDark: '#121212', // 暗殺夜行深色背景
+                        koroCard: '#1E1E1E', // 卡片深灰底色
+                        koroAccent: '#FF3366', // 亮眼點綴紅
+                        koroGreen: '#00CC66' // 綠色條紋元素
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 自定義殺老師風格條紋背景效果 */
+        .koro-stripe-bg {
+            background: repeating-linear-gradient(
+                45deg,
+                #1a1a1a,
+                #1a1a1a 20px,
+                #121212 20px,
+                #121212 40px
+            );
+        }
+        
+        /* 浮動發光陰影效果 */
+        .koro-glow {
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.25);
+        }
+        
+        /* 卡片懸停立體浮動 */
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+
+        /* 標題與裝飾線 */
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #FFD700;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="bg-koroDark text-gray-100 font-sans antialiased selection:bg-koroYellow selection:text-black">
+
+    <!-- 頂部導覽列 -->
+    <header class="sticky top-0 z-50 bg-koroDark/95 backdrop-blur border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- 品牌 Logo 區 -->
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-koroYellow flex items-center justify-center text-koroDark font-black text-xl shadow-lg border-2 border-white animate-pulse">
+                    殺
+                </div>
+                <div>
+                    <span class="text-xs text-koroYellow font-bold tracking-widest block">木棉花國際 MUSE</span>
+                    <span class="text-lg sm:text-xl font-black tracking-wider text-white">暗殺教室周邊專賣</span>
+                </div>
+            </div>
+
+            <!-- 導覽連結 -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#hero" class="hover:text-koroYellow transition">首頁主打</a>
+                <a href="#products" class="hover:text-koroYellow transition">精選周邊</a>
+                <a href="#about" class="hover:text-koroYellow transition">正版授權保證</a>
+                <a href="#products" class="bg-koroYellow text-koroDark font-bold px-5 py-2.5 rounded-full hover:bg-koroYellowDark transition shadow-md">
+                    立即搶購
+                </a>
+            </nav>
+
+            <!-- 手機版選單按鈕 (簡化互動) -->
+            <div class="md:hidden">
+                <a href="#products" class="bg-koroYellow text-koroDark font-bold text-xs px-3 py-2 rounded-md">
+                    商品列表
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主視覺 Banner 區 -->
+    <section id="hero" class="relative overflow-hidden koro-stripe-bg py-20 lg:py-32 border-b border-gray-800">
+        <!-- 裝飾用殺老師黃色光暈背景 -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-koroYellow/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <!-- 官方限定標籤 -->
+            <div class="inline-flex items-center space-x-2 bg-koroYellow/10 border border-koroYellow/30 px-4 py-1.5 rounded-full text-koroYellow text-xs sm:text-sm font-bold mb-6">
+                <span>⭐ 木棉花國際 (MUSE) 官方授權正版</span>
+            </div>
+
+            <!-- 主標題 -->
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-white mb-6 uppercase">
+                暗殺教室 <span class="text-koroYellow underline decoration-koroAccent decoration-4">椲丘中學</span> 補習班
+            </h1>
+
+            <!-- 副標題 -->
+            <p class="max-w-2xl mx-auto text-base sm:text-xl text-gray-300 mb-10 leading-relaxed">
+                「為師的周邊，可是世界最高品質的喔波嚕嚕嚕——」收錄殺老師、潮田渚、赤羽業等經典角色正版周邊，收藏你的青春與暗殺回憶！
+            </p>
+
+            <!-- 行動呼籲按鈕 (CTA) -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#products" class="w-full sm:w-auto bg-koroYellow text-koroDark font-extrabold text-lg px-8 py-4 rounded-xl hover:bg-koroYellowDark transition transform hover:-translate-y-1 shadow-xl koro-glow">
+                    探索全部周邊
+                </a>
+                <a href="#about" class="w-full sm:w-auto bg-gray-800 text-gray-200 font-bold text-lg px-8 py-4 rounded-xl hover:bg-gray-700 transition border border-gray-700">
+                    了解正版保證
+                </a>
+            </div>
+
+            <!-- 特色標籤列 -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                <div class="bg-koroCard/80 border border-gray-800 p-4 rounded-xl text-center">
+                    <span class="block text-koroYellow font-black text-xl">100%</span>
+                    <span class="text-xs text-gray-400">木棉花正版授權</span>
+                </div>
+                <div class="bg-koroCard/80 border border-gray-800 p-4 rounded-xl text-center">
+                    <span class="block text-koroYellow font-black text-xl">限定</span>
+                    <span class="text-xs text-gray-400">官方指定販售</span>
+                </div>
+                <div class="bg-koroYellow/10 border border-koroYellow/30 p-4 rounded-xl text-center">
+                    <span class="block text-koroYellow font-black text-xl">快速出貨</span>
+                    <span class="text-xs text-gray-400">現貨熱賣中</span>
+                </div>
+                <div class="bg-koroCard/80 border border-gray-800 p-4 rounded-xl text-center">
+                    <span class="block text-koroYellow font-black text-xl">精美包裝</span>
+                    <span class="text-xs text-gray-400">收藏送禮首選</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 熱門周邊商品展示區 -->
+    <section id="products" class="py-20 bg-koroDark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- 區塊標題 -->
+            <div class="text-center mb-16">
+                <span class="text-koroYellow font-bold tracking-widest text-sm uppercase">FEATURED PRODUCTS</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white mt-2 section-title">熱門精選周邊商品</h2>
+                <p class="text-gray-400 mt-4 max-w-xl mx-auto">精選人氣角色立牌、絨毛玩偶與實用生活小物，滿足你的 E 班收藏魂！</p>
+            </div>
+
+            <!-- 商品格狀卡片容器 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- 商品卡片 1 -->
+                <div class="product-card bg-koroCard rounded-2xl overflow-hidden border border-gray-800 flex flex-col">
+                    <div class="relative bg-gray-900 aspect-square overflow-hidden flex items-center justify-center">
+                        <span class="absolute top-3 left-3 bg-koroAccent text-white text-xs font-bold px-2.5 py-1 rounded-full z-10">熱銷排行</span>
+                        <img src="https://placehold.co/400x400/222222/FFD700?text=Koro-Sensei+Plush" alt="殺老師超大表情絨毛玩偶" class="object-cover w-full h-full hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x400/121212/FFD700?text=Product+Image'">
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 font-medium">木棉花國際獨家</span>
+                            <h3 class="font-bold text-lg text-white mt-1 mb-2">殺老師變臉表情造型抱枕絨毛玩偶</h3>
+                            <div class="flex items-center space-x-2 mb-4">
+                                <span class="text-koroYellow font-black text-xl">NT$ 780</span>
+                                <span class="text-gray-500 text-sm line-through">NT$ 980</span>
+                            </div>
+                        </div>
+                        <button onclick="alertBox('已成功加入購物車！')" class="w-full bg-koroYellow hover:bg-koroYellowDark text-koroDark font-bold py-2.5 rounded-xl transition text-center shadow">
+                            立即搶購
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 商品卡片 2 -->
+                <div class="product-card bg-koroCard rounded-2xl overflow-hidden border border-gray-800 flex flex-col">
+                    <div class="relative bg-gray-900 aspect-square overflow-hidden flex items-center justify-center">
+                        <span class="absolute top-3 left-3 bg-koroGreen text-white text-xs font-bold px-2.5 py-1 rounded-full z-10">新品上市</span>
+                        <img src="https://placehold.co/400x400/222222/FFD700?text=Nagisa+Akabane+Stand" alt="3年E班壓克力立牌" class="object-cover w-full h-full hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x400/121212/FFD700?text=Product+Image'">
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 font-medium">3年E班系列</span>
+                            <h3 class="font-bold text-lg text-white mt-1 mb-2">潮田渚 &amp; 赤羽業 大型壓克力立牌組</h3>
+                            <div class="flex items-center space-x-2 mb-4">
+                                <span class="text-koroYellow font-black text-xl">NT$ 450</span>
+                                <span class="text-gray-500 text-sm line-through">NT$ 550</span>
+                            </div>
+                        </div>
+                        <button onclick="alertBox('已成功加入購物車！')" class="w-full bg-koroYellow hover:bg-koroYellowDark text-koroDark font-bold py-2.5 rounded-xl transition text-center shadow">
+                            立即搶購
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 商品卡片 3 -->
+                <div class="product-card bg-koroCard rounded-2xl overflow-hidden border border-gray-800 flex flex-col">
+                    <div class="relative bg-gray-900 aspect-square overflow-hidden flex items-center justify-center">
+                        <span class="absolute top-3 left-3 bg-koroAccent text-white text-xs font-bold px-2.5 py-1 rounded-full z-10">限時特惠</span>
+                        <img src="https://placehold.co/400x400/222222/FFD700?text=Assassin+Badge" alt="暗殺教室徽章收藏組" class="object-cover w-full h-full hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x400/121212/FFD700?text=Product+Image'">
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 font-medium">收藏紀念</span>
+                            <h3 class="font-bold text-lg text-white mt-1 mb-2">殺老師表情包金屬馬口鐵徽章盲盒（全6種）</h3>
+                            <div class="flex items-center space-x-2 mb-4">
+                                <span class="text-koroYellow font-black text-xl">NT$ 180</span>
+                                <span class="text-gray-500 text-sm line-through">NT$ 220</span>
+                            </div>
+                        </div>
+                        <button onclick="alertBox('已成功加入購物車！')" class="w-full bg-koroYellow hover:bg-koroYellowDark text-koroDark font-bold py-2.5 rounded-xl transition text-center shadow">
+                            立即搶購
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 商品卡片 4 -->
+                <div class="product-card bg-koroCard rounded-2xl overflow-hidden border border-gray-800 flex flex-col">
+                    <div class="relative bg-gray-900 aspect-square overflow-hidden flex items-center justify-center">
+                        <span class="absolute top-3 left-3 bg-koroGreen text-white text-xs font-bold px-2.5 py-1 rounded-full z-10">人氣必買</span>
+                        <img src="https://placehold.co/400x400/222222/FFD700?text=T-Shirt+Hoodie" alt="殺老師主題連帽T恤" class="object-cover w-full h-full hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/400x400/121212/FFD700?text=Product+Image'">
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 font-medium">官方服飾</span>
+                            <h3 class="font-bold text-lg text-white mt-1 mb-2">椲丘中學 3年E班校服款日常連帽T恤</h3>
+                            <div class="flex items-center space-x-2 mb-4">
+                                <span class="text-koroYellow font-black text-xl">NT$ 1,280</span>
+                                <span class="text-gray-500 text-sm line-through">NT$ 1,580</span>
+                            </div>
+                        </div>
+                        <button onclick="alertBox('已成功加入購物車！')" class="w-full bg-koroYellow hover:bg-koroYellowDark text-koroDark font-bold py-2.5 rounded-xl transition text-center shadow">
+                            立即搶購
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 關於木棉花正版授權保證區塊 -->
+    <section id="about" class="py-20 bg-gray-900 border-t border-b border-gray-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-koroYellow font-bold tracking-widest text-sm uppercase">MUSE AUTHENTIC GUARANTEE</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-white mt-2 mb-6">木棉花國際正版授權，品質安心保證</h2>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        本網頁所展示之《暗殺教室》（Assassination Classroom）周邊商品，全數皆透過日本官方嚴格監修，並由木棉花國際（MUSE）正式代理引進。拒絕盜版，支持正版授權，才能給予殺老師與 E 班學生最棒的支持與收藏價值！
+                    </p>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-koroYellow font-bold text-lg">✓</span>
+                            <span><strong>日本原廠監修：</strong>每一個表情、色彩與材質均符合原作最高規格。</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-koroYellow font-bold text-lg">✓</span>
+                            <span><strong>防偽雷射標籤：</strong>商品包裝皆附有木棉花官方防偽雷射貼紙。</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-koroYellow font-bold text-lg">✓</span>
+                            <span><strong>完善售後服務：</strong>正版品質有保障，購物更安心。</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-koroCard p-8 rounded-3xl border border-gray-800 text-center relative overflow-hidden shadow-2xl">
+                    <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-koroYellow/10 rounded-full blur-2xl"></div>
+                    <div class="text-6xl mb-4">🏫</div>
+                    <h3 class="text-2xl font-bold text-white mb-3">3年E班暗殺教室</h3>
+                    <p class="text-gray-400 text-sm mb-6">「在畢業之前，大家一起把殺老師... 還有周邊通通帶回家吧！」</p>
+                    <div class="inline-block bg-koroYellow/20 border border-koroYellow/50 text-koroYellow px-6 py-3 rounded-xl font-bold text-sm">
+                        木棉花國際股份有限公司 總代理
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="bg-koroDark py-12 border-t border-gray-800 text-gray-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <p class="text-white font-bold text-base mb-1">暗殺教室－木棉花國際 | 正版動漫周邊展示</p>
+                <p class="text-xs text-gray-500">&copy; 2026 Matsui Yuusei / Shueisha, Anime Assassination Classroom Committee. Licensed by MUSE Communication Co., Ltd.</p>
+            </div>
+            <div class="flex space-x-6 text-xs">
+                <a href="#hero" class="hover:text-koroYellow transition">回到頂部</a>
+                <a href="#products" class="hover:text-koroYellow transition">精選商品</a>
+                <a href="#about" class="hover:text-koroYellow transition">授權說明</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 自定義訊息提示框 (取代 alert()) -->
+    <div id="custom-toast" class="fixed bottom-5 right-5 z-50 transform translate-y-32 opacity-0 transition-all duration-300 bg-koroYellow text-koroDark font-bold px-6 py-3 rounded-xl shadow-2xl flex items-center space-x-3">
+        <span>🎉</span>
+        <span id="toast-text">提示訊息</span>
+    </div>
+
+    <script>
+        // 自定義通知函式 (避免使用原生 alert())
+        function alertBox(message) {
+            const toast = document.getElementById('custom-toast');
+            const toastText = document.getElementById('toast-text');
+            toastText.innerText = message;
+            
+            toast.classList.remove('translate-y-32', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-32', 'opacity-0');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
